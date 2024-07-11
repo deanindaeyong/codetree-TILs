@@ -6,7 +6,7 @@ int main() {
     int a,b;
 
     cin>>a>>b;
-    int x=a>b?a:b;
-    cout<<x;
+    
+    cout<<((a>b)?a:b);
     return 0;
 }

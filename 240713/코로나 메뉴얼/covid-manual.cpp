@@ -5,8 +5,7 @@ int main() {
     // Please write your code here.
     char pa,pb,pc;
     int a1,b1,c1;
-    int a,b,c,d;
-    a=b=c=d=0;
+ 
 
     cin>>pa>>a1>>pb>>b1>>pc>>c1;
 

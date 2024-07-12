@@ -10,12 +10,12 @@ int main() {
 
     cin>>pa>>a1>>pb>>b1>>pc>>c1;
 
-    if((pa=='Y'&& a1>37))
-        if((pb=='Y'&&b1>37)||(pc=='Y'&&c1>37))
+    if((pa=='Y'&& a1>=37))
+        if((pb=='Y'&&b1>=37)||(pc=='Y'&&c1>=37))
             cout<<'E';
         else cout<<'N';
     
-    else if((pb=='Y'&&b1>37)&&(pc=='Y'&&c1>37))
+    else if((pb=='Y'&&b1>=37)&&(pc=='Y'&&c1>=37))
     cout<<'E';
     else cout<<'N';
 

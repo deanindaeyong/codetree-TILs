@@ -8,7 +8,7 @@ int main() {
     char ag,bg;
     cin>>aa>>ag>>ba>>bg;
 
-    if((ag=='M'||bg=='M')&&(aa>=19||ba>=19))
+    if((ag=='M'&&aa>=19)||(bg=='M'&&ba>=19))
     cout<<1;
     else cout<<0;
     return 0;

@@ -8,7 +8,7 @@ int main() {
     int x=n;
     for(int i=1;i<=n;i++){
        
-        if(x/i==0){
+        if(x/i<=1){
             cout<<i;
             break;
         }

@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Please write your code here.
+    int a,b;
+    int prod=1;
+    cin>>a>>b;
+    for(int i=1;i<=b;i++){
+        
+        if(i%a==0)
+        prod*=i;
+    }
+    cout<<prod;
+    return 0;
+}

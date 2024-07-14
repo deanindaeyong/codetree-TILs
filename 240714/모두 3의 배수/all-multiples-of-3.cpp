@@ -4,14 +4,14 @@ using namespace std;
 int main() {
     // Please write your code here.
     int a;
-    bool sfd=false;
+    bool sfd=true;
     for(int i=0;i<5;i++){
         cin>>a;
-        if(a%3==0){
-            sfd=true;
+        if(a%3!=0){
+            sfd=false;
         }
     }
-    if(sfd)cout<<1;
-    else cout<<0;
+    if(sfd==0)cout<<0;
+    else cout<<1;
     return 0;
 }

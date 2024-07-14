@@ -9,7 +9,7 @@ int main() {
     for(int i=a;i<=b;i++){
 
         if(i%c==0){
-            sfd=false;
+            sfd=true;
         }
     }
     if(sfd){

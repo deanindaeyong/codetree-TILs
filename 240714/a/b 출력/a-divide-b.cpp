@@ -8,10 +8,9 @@ int main() {
     cin>>a>>b;
     
     x=a;
-    cout<<fixed;
-    
-    cout.precision(1);
-     cout<<"0.";
+    if(a>b)
+    cout<<"1.";
+    else cout<<"0.";
     for(int i=0;i<20;i++){
         y=(x*10)/b;
         cout<<y;

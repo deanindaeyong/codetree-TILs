@@ -7,7 +7,7 @@ int main() {
     cnt=0;
     for(int i=0;i<10;i++){
         cin>>n;
-        if(i%2!=0){
+        if(n%2!=0){
             cnt++;
         }
     }

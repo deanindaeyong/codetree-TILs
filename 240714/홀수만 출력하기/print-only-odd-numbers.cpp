@@ -7,7 +7,7 @@ int main() {
     cin>>n;
     for(int i=1;i<=n;i++){
         cin>>a;
-        if(a%3==0){
+        if(a%3==0 && a%2!=0){
             cout<<a<<endl;
         }
     }

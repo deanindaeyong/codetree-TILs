@@ -2,20 +2,16 @@
 using namespace std;
 
 int main() {
-    // Please write your code here.
+    // 여기에 코드를 작성해주세요.
     int a,b,x,y;
-
     cin>>a>>b;
-    
-    x=a;
-    if(a>b)
-    cout<<"1.";
-    else cout<<"0.";
+
+    cout<<a/b<<".";
+    a%=b;
     for(int i=0;i<20;i++){
-        y=(x*10)/b;
-        cout<<y;
-        x=((x*10)%b);
+        a*=10;
+        cout<<a/b;
+        a%=b;
     }
-    
     return 0;
 }

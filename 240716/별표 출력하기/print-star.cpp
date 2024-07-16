@@ -6,20 +6,20 @@ int main() {
 
     int n;
     cin>>n;
-    int cnt=n/2-1;
-    if(n==1){
-        cnt=1;
-    }
-    for(int i=0;i<=2*n-2;i++){
-        for(int j=0;j<cnt;j++){
+    int cnt=n;
+    for(int i=0;i<n;i++){
+        for(int j=0;j<i+1;j++){
             cout<<"* ";
             
         }
       cout<<endl;
-      if(i>=n-1){
-        cnt--;
-      }
-      else{cnt++;}
+    }
+    for(int i=cnt-1;i>0;i--){
+        for(int j=i;j>0;j--){
+            cout<<"* ";
+            
+        }
+      cout<<endl;
     }
     return 0;
 }

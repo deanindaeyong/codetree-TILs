@@ -8,10 +8,10 @@ int main() {
     int cnt=b;
     for(int i=1;i<=9;i++){
         cnt=b;
-        for(int j=1;j<=a+1;j++){
+        for(int j=b;j>0;j-=2){
             cout<<cnt<<" * "<<i<<" = "<<cnt*i;
             cnt-=2;
-            if(j<3)
+            if(j>2)
             cout<<" / ";
         }
         cout<<endl;

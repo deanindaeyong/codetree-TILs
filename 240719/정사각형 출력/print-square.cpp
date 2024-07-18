@@ -11,6 +11,7 @@ int main() {
             cout<<cnt<<" ";
             cnt++;
         }
+        cout<<endl;
     }
     return 0;
 }

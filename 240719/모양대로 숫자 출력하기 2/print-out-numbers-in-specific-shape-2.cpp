@@ -5,12 +5,12 @@ int main() {
     // Please write your code here.
     int n;
     cin>>n;
-    int cnt=2;
+    int cnt=1;
     for(int i=0;i<n;i++){
         for(int j=0;j<n;j++){
-            if(cnt>8) cnt=2;
-            cout<<cnt<<" ";
-            cnt*=2;
+            if(cnt>4) cnt=1;
+            cout<<cnt*2<<" ";
+            cnt++;
         }
         cout<<endl;
     }

@@ -8,7 +8,7 @@ int main() {
     int cnt=b;
     for(int i=1;i<=9;i++){
         cnt=b;
-        for(int j=b;j>0;j-=2){
+        for(int j=b;j>0;j-=a){
             cout<<cnt<<" * "<<i<<" = "<<cnt*i;
             cnt-=2;
             if(j>2)

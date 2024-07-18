@@ -11,7 +11,7 @@ int main() {
         for(int j=b;j>0;j-=a){
             cout<<cnt<<" * "<<i<<" = "<<cnt*i;
             cnt-=2;
-            if(j>2)
+            if(j-a>0)
             cout<<" / ";
         }
         cout<<endl;

@@ -8,11 +8,11 @@ int main() {
     int cnt=0;
     for(int i=0;i<10;i++){
         cin>>arr[i];
-        cnt++;
+
         if(arr[i]==0){
-            arr[i]={};
-            --cnt;
+            
             break;}
+        cnt++;
     }
     for(int i=cnt-1;i>=0;i--)
         cout<<arr[i]<<" ";

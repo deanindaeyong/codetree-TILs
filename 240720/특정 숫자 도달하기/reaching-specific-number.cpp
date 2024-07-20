@@ -5,7 +5,7 @@ int main() {
     // Please write your code here.
     int arr[100],n;
     int sum=0,cnt=0;
-    for(int i=0;i<100;i++){
+    for(int i=0;i<10;i++){
         cin>>n;
         arr[i]=n;
         if(arr[i]>=250) break;

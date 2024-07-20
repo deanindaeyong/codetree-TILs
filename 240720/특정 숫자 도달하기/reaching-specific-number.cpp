@@ -8,7 +8,7 @@ int main() {
     for(int i=0;i<100;i++){
         cin>>n;
         arr[i]=n;
-        if(arr[i]>120) break;
+        if(arr[i]>=250) break;
         sum+=arr[i];
         cnt++;
     }

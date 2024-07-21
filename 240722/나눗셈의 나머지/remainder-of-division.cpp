@@ -4,11 +4,20 @@ using namespace std;
 int main() {
     // Please write your code here.
     int a,b;
-    int count[10]={0};
+    int count[10]={0,},sum=0;
     cin>>a>>b;
-    for(int i=a;i=0;i)
-    for(int i=1;i<10;i++){
-        sum+=(count[i])^2;
+    
+   
+    while(a!=0){
+        
+        count[a%b]++;
+        a=a/b;
     }
+    for(int i=0;i<10;i++){
+        sum=sum+(count[i]*count[i]);
+        
+    }
+    cout<<sum;
+    
     return 0;
 }

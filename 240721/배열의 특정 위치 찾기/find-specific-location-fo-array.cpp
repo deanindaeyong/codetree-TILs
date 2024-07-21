@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     // Please write your code here.
-    int n,sum=0,cnt=0,sum2=0,arr[10];
+    int sum=0,cnt=0,sum2=0,arr[10];
     for(int i=0;i<10;i++){
         cin>>arr[i];
         if(i%2!=0){

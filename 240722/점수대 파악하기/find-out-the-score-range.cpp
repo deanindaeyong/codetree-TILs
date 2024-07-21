@@ -9,7 +9,6 @@ int main() {
         cin>>arr[i];
         if(arr[i]==0) break;
         if(arr[i]<10) continue;
-        if(arr[i]==100) count[10]++;
         else count[arr[i]/10]++;
     }
     for(int i=100;i>0;i-=10){

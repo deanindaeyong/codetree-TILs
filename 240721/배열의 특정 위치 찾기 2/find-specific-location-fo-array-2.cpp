@@ -11,6 +11,8 @@ int main() {
         }
         else sumo+=arr[i];
     }
+    if(sume>sumo)
     cout<<sume-sumo;
+    else cout<<sumo-sume;
     return 0;
 }

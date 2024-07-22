@@ -25,7 +25,7 @@ int main() {
                 
             }
             if(index==-1){
-                cout<<0<<endl;
+                cout<<"0"<<endl;
             }
         }
         if(a==3){

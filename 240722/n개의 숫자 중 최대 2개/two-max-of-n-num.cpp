@@ -8,6 +8,7 @@ int main() {
     int arr[n],cnt;
     cin>>arr[0];
     int max=arr[0],max2;
+    cnt=0;
     for(int i=1;i<n;i++){
         cin>>arr[i];
         if(max<arr[i]){
@@ -15,8 +16,9 @@ int main() {
             cnt=i;
         }
     }
-   
-    max2=arr[0];
+   if(cnt==0){
+    max2=arr[1];
+   }else max2=arr[0];
     for(int i=0;i<n;i++){
         if(i==cnt){
             continue;

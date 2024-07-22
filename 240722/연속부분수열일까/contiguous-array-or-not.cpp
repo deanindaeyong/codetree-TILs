@@ -16,7 +16,7 @@ int main() {
        for(int j=i;j<n2+i;j++){
         if(arra[i]==arrb[j]){
             cnt++;
-            break;
+           
         }
        }
     }

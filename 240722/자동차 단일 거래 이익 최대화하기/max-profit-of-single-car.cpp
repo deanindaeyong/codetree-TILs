@@ -9,7 +9,7 @@ int main() {
     cin>>arr[0];
     for(int i=1;i<n;i++){
         cin>>arr[i];
-        if(arr[i-1]>arr[i]){
+        if(arr[i-1]>=arr[i]){
             cnt++;
         }
     }

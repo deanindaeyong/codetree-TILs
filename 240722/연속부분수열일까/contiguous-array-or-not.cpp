@@ -12,7 +12,7 @@ int main() {
     for(int j=0;j<n2;j++){
         cin>>arrb[j];
     }
-    for(int i=0;i<n1-n2;i++){
+    for(int i=0;i<n1-n2+cnt;i++){
        
         if(arra[i]==arrb[cnt]){
             cnt++;

@@ -33,6 +33,7 @@ int main() {
             for(int k=s-1;k<e;k++){
                 cout<<arr[k]<<" ";
             }
+            cout<<endl;
         }
     }
     return 0;

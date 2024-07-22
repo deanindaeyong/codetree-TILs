@@ -12,10 +12,12 @@ int main() {
     for(int j=0;j<n2;j++){
         cin>>arrb[j];
     }
-    for(int i=0;i<n1;i++){
-        if(arra==arrb){
+    for(int i=0;i<n1-n2;i++){
+       for(int j=0;j<n2;j++){
+        if(arra[i]==arrb[j]){
             cnt++;
         }
+       }
     }
     if(cnt==n2){
         cout<<"Yes";

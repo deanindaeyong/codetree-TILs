@@ -3,13 +3,14 @@ using namespace std;
 
 int main() {
     // Please write your code here
-    int n,q,arr[100],a,b,index=-1,s,e;
+    int n,q,arr[100],a,b,index,s,e;
     cin>>n>>q;
     for(int i=0;i<n;i++){
         cin>>arr[i];
     }
     for(int i=0;i<q;i++){
         cin>>a;
+        index=-1;
         if(a==1){
             cin>>b;
             cout<<arr[b-1]<<endl;;
@@ -19,14 +20,14 @@ int main() {
             for(int j=0;j<n;j++){
                 if(arr[j]==b){
                     index=j+1;
-                    cout<<index<<endl;
+        
                     break;
                 }
                 
             }
             if(index==-1){
-                cout<<"0"<<endl;
-            }
+                cout<<0<<endl;
+            } else cout<<index<<endl;
         }
         if(a==3){
             cin>>s>>e;

@@ -6,7 +6,7 @@ int main() {
     string x,y;
     cin>>x>>y;
     int xl,yl;
-    xl=x.length();yl=yl.length();
+    xl=x.length();yl=y.length();
     if(xl>yl){cout<<x<<" "<<xl;}
     else if(yl>xl){cout<<y<<" "<<yl;}
     else cout<<"Same";

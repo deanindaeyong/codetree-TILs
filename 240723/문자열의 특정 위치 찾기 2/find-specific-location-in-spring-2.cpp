@@ -9,7 +9,7 @@ int main() {
     string c[5] ={"apple","banana","grape","blueberry","orange"};
         for(int i=0;i<5;i++){
             for(int j=2;j<4;j++){
-                if(c[i][j]=='a'){
+                if(c[i][j]==a){
                     cout<<c[i]<<endl;
                     cnt++;
                     

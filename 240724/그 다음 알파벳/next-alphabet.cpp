@@ -6,7 +6,7 @@ int main() {
     char a;
     cin>>a;
     if(a=='z'){
-        a='z'-'a'-1;
+        a=z-a-1;
     }
     cout<<(char)(a+1);
     return 0;

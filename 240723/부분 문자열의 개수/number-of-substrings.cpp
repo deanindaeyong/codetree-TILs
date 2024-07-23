@@ -6,7 +6,7 @@ int main() {
     string a,b;
     cin>>a>>b;
     int cnt=0;
-    for(int i=a.find(b);i<a.length();i+=2){
+    for(int i=a.find(b);i<a.length();i++){
         if(a[i]==b[0] && a[i+1]==b[1]){
             cnt++;
         }

@@ -8,7 +8,8 @@ int main() {
     cin>>c;
     for(int i=0;i<c.length();i++){
         if(isdigit(c[i])!=0){
-            sum+=c[i];
+            sum+=(c[i]-'0');
+    
         }
     }
     cout<<sum;

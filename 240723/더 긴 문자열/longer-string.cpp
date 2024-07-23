@@ -9,6 +9,6 @@ int main() {
     xl=x.length();yl=y.length();
     if(xl>yl){cout<<x<<" "<<xl;}
     else if(yl>xl){cout<<y<<" "<<yl;}
-    else cout<<"Same";
+    else cout<<"same";
     return 0;
 }

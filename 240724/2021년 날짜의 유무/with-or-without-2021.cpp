@@ -7,7 +7,7 @@ bool ox(int m, int d){
         if(d>=1 && d<=28){
             return true;
         }
-        else false;
+        else return false;
     }else if(m<1 ||m>12||d<1||d>31){
         return false;
     }

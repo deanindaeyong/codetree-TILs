@@ -12,7 +12,7 @@ bool ox(int m, int d){
         return false;
     }
     
-    else if((m%2!=0 &&m<9 &&)||(m%2==0 &&m<13)){
+    else if((m%2!=0 &&m<9 )||(m%2==0 &&m<13)){
         if(d>=1 && d<=31){
             return true;
         }else return false;

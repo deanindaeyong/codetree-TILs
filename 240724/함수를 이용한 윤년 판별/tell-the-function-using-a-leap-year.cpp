@@ -18,7 +18,7 @@ int main() {
     cin>>y;
     if(leapyear(y)){
         cout<<"true";
-    }cout<<"false";
+    }else cout<<"false";
 
     return 0;
 }

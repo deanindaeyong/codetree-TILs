@@ -13,7 +13,7 @@ void cd(int a,int b){
 }
 int main() {
     // Please write your code here.
-    int 8,m;
+    int n,m;
     cin>>n>>m;
     cd(n,m);
     return 0;

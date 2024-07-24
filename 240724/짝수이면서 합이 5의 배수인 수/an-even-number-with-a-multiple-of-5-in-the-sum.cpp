@@ -5,7 +5,7 @@ string fun(int n){
     if(n%2==0){
         if((n%10+n/10)%5==0){
             return "Yes";
-        }
+        }return "No";
     }else return "No";
 
 }

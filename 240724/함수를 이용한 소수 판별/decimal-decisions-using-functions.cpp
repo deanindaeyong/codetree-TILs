@@ -4,6 +4,9 @@ int isprime(int a,int b){
     int sum=0;
     for(int i=a;i<=b;i++){
         bool nprime=false;
+        if(i==1){
+            continue;
+        }
         for(int j=2;j<i;j++){
             if(i%j==0){
                 nprime=true;

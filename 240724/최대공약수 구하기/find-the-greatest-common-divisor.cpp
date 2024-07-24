@@ -2,15 +2,8 @@
 using namespace std;
 void cd(int a,int b){
     int max=1;
-    if(a<b){
-        a=a;
-        b=b;
-    }
-    else {int temp= a;
-        a=b;
-        b=temp;
-        }
-    for(int i=2;i<=b;i++){
+    
+    for(int i=2;i<=min(a,b);i++){
         if(a%i==0 && b%i==0 &&i>max){
             max=i;
         }
@@ -20,7 +13,7 @@ void cd(int a,int b){
 }
 int main() {
     // Please write your code here.
-    int n,m;
+    int 8,m;
     cin>>n>>m;
     cd(n,m);
     return 0;

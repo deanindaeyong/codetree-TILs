@@ -16,8 +16,9 @@ bool ox(int m, int d){
         if(d>=1 && d<=31){
             return true;
         }else return false;
-    }else {if(d<=30){return true;}
-    else return false;}
+    }else {if(d<=30){
+        return true;
+        } else {return false;}}
 }
 
 int main() {

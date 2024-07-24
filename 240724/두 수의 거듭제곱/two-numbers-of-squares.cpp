@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+
 int sq(int a,int b){
     int x=1;
     for(int i=0;i<b;i++){

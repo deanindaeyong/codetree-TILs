@@ -8,7 +8,7 @@ int dep(int a){
     else if(a==2)
         return 2;
     if(a%2==0)
-        return dep(a/2)+a;
+        return dep(a-2)+a;
     if(a%2!=0)
         return dep(a-2)+a;
     

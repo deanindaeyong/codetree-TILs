@@ -21,13 +21,20 @@ int main() {
         pos2[i]=make_pair(a,i+1);
     }
     sort(pos,pos+n,comp);
-    for(int i=0;i<n;i++){
+  /*  for(int i=0;i<n;i++){
         for(int j=0;j<n;j++){
             if(pos2[i].first==pos[j].first && pos2[i].second==pos[j].second){
                 cout<<j+1<<" ";
                 break;
             }
         }
+    }*/
+    int ans[n];
+    for(int i=0;i<n;i++){
+        ans[pos[i].second]=i+1;
+    }
+    for(int i=0;i<n;i++){
+        cout<<ans[i]<<" ";
     }
     return 0;
 }

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 using namespace std;
 int n;
 class Ppl{
@@ -11,7 +12,9 @@ class Ppl{
     }
     Ppl(){}
 };
-
+bool compare(const Ppl &a,const Ppl &b){
+    return a.name>b.name;
+}
 int main() {
     // 여기에 코드를 작성해주세요.
     
@@ -23,8 +26,9 @@ int main() {
         cin>>a>>b>>c;
         ppl[i]=Ppl(a,b,c);
     }
-    cout<<"name "<<ppl[2].name<<endl;
-    cout<<"addr "<<ppl[2].address<<endl;
-    cout<<"city "<<ppl[2].city;
+    sort(ppl,ppl+n,compare);
+    cout<<"name "<<ppl[0].name<<endl;
+    cout<<"addr "<<ppl[0].address<<endl;
+    cout<<"city "<<ppl[0].city;
     return 0;
 }

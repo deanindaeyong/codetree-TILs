@@ -1,5 +1,6 @@
 #include <iostream>
 #include <algorithm>
+#include <cmath>
 using namespace std;
 int n;
 class Dis{
@@ -9,9 +10,9 @@ class Dis{
     Dis(){}
 };
 bool comp(const Dis &a,const Dis &b){
-    if(((a.x)*(a.x)+(a.y)*(a.y))==((b.x)*(b.x)+(b.y)*(b.y)))
+    if(abs(a.x)+abs(a.y)==abs(b.x)+abs(b.y))
         return a.r<b.r;
-    else return ((a.x)*(a.x)+(a.y)*(a.y))<((b.x)*(b.x)+(b.y)*(b.y));
+    else return abs(a.x)+abs(a.y)<abs(b.x)+abs(b.y);
 }
 int main() {
     // 여기에 코드를 작성해주세요.

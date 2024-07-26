@@ -5,7 +5,9 @@ int cnt(int a,int b,int c){
     int a0=11;
     int b0=11;
     int c0=11;
-
+    if(((a*24+b)*60+c-((11*24+11)*60+11))<0){
+       return -1;
+    }
     return (a*24+b)*60+c-((11*24+11)*60+11);
 
 

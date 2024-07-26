@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 using namespace std;
 int n,arr[100000*2];
 int main() {
@@ -6,13 +7,19 @@ int main() {
     cin>>n;
     
     int cur=0,cnt=0;
+   
     for(int i=0;i<n;i++){
-        cnt=i+1;
+
         cin>>arr[i];
-        cur+=arr[i];
+        sort(arr,arr+i+1);
+
         if(i%2==0){
-            cout<<cur/cnt<<" ";
+            cout<<arr[i/2]<<" ";
         }
+       
     }
+
     return 0;
 }
+// 15297461011
+//12456

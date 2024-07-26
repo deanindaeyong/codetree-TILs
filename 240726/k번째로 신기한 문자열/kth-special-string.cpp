@@ -19,12 +19,13 @@ int main() {
    
     int wat=0;
     for(int i=0;i<n;i++){
-        if(a[i].find(t)!=string::npos){
+        if(a[i].substr(0,t.length())==t){
            wat=i;
            break;
           
         }
     }
+
     cout<<a[wat+k-1];
     return 0;
 }

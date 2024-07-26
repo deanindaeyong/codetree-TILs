@@ -9,7 +9,7 @@ int main() {
     getline(cin,b);
     int na=a.length();
     int nb=b.length();
-    sort(a,a+na);sort(b,b+ba);
+    sort(a.begin(),a.end());sort(b.begin(),b.end());
     if(a==b){
         cout<<"Yes";
     }else cout<<"No";

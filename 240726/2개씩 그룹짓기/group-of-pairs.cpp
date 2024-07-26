@@ -10,7 +10,7 @@ int main() {
     }
     sort(arr,arr+n*2);
     int sum=0;
-    int max=arr[n]+arr[n-1];
+    int max=0;
     int index;
 
     for(int i=0;i<2*n;i++){

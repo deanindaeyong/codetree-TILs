@@ -20,7 +20,7 @@ int main() {
             index=i;
         }
     }
-    cout<<arr[index+1]+arr[index];
+    cout<<max;
     return 0;
 
 }

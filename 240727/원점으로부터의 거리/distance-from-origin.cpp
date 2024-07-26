@@ -9,7 +9,7 @@ class Dis{
     Dis(){}
 };
 bool comp(const Dis &a,const Dis &b){
-    if((a.x)*(a.x)+(a.y)*(a.y)==(b.x)*(b.x)+(b.y)*(b.y))
+    if(((a.x)*(a.x)+(a.y)*(a.y))==((b.x)*(b.x)+(b.y)*(b.y)))
         return a.r<b.r;
     else return ((a.x)*(a.x)+(a.y)*(a.y))<((b.x)*(b.x)+(b.y)*(b.y));
 }

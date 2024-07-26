@@ -15,6 +15,8 @@ int main() {
     string a;
     int h;
     double w;
+    cout<<fixed;
+    cout.precision(1);
     tuple<string,int,double> student[5];
     for(int i=0;i<5;i++){
         cin>>a>>h>>w;

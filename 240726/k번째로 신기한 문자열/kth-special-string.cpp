@@ -6,9 +6,8 @@ string t;
 string a[200];
 int main() {
     // 여기에 코드를 작성해주세요.
-    cin>>n>>k;
-    cin.ignore();
-    getline(cin,t);
+    cin>>n>>k>>t;
+
    
     for(int i=0;i<n;i++){
         getline(cin,a[i]);

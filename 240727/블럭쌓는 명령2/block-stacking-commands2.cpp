@@ -6,7 +6,7 @@ int main() {
     int n,k;
     int a,b;
     cin>>n>>k;
-    int arr[n]={};
+    int arr[200]={};
     
     for(int i=0;i<k;i++){
         cin>>a>>b;

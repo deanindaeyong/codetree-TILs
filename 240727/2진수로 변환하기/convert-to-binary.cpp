@@ -6,7 +6,7 @@ int main() {
     int n;
     int cnt=0;
     cin>>n;
-    int ans[n]={};
+    int ans[100000];
 
     while(true){
         if(n<2){

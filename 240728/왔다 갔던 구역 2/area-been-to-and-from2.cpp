@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     // 여기에 코드를 작성해주세요.
-    int n,x,arr[1000]={0,};
+    int n,x,arr[10000]={0,};
     char y;
     cin>>n;
     
@@ -11,7 +11,7 @@ int main() {
         int curr=0,x1=0;
         cin>>x>>y;
         x1=x;
-        x+=100;
+        x+=50;
         if(i==0){
             curr=0;
         }else curr=x;
@@ -30,7 +30,7 @@ int main() {
         }
     }
     int cnt=0;
-    for(int i=0;i<1000;i++){
+    for(int i=0;i<10000;i++){
         if(arr[i]>=2){
             cnt++;
         }

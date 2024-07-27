@@ -16,7 +16,7 @@ int main() {
         
         if(y=='R'){
 
-        for(int j=curr;j<curr+1;j++){
+        for(int j=curr;j<curr+x;j++){
             ++arr[j];
             index=j;
             }

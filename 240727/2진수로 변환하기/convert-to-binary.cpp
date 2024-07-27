@@ -16,7 +16,7 @@ int main() {
         ans[cnt++]=n%2;
         n/=n;
     }
-    for(int i=n-1;i>=0;i--){
+    for(int i=cnt-1;i>=0;i--){
         cout<<ans[i];
     }
     return 0;

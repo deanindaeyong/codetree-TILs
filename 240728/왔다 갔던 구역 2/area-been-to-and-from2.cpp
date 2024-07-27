@@ -8,25 +8,27 @@ int main() {
     cin>>n;
     
     for(int i=0;i<n;i++){
-        int curr=0,x1=0;
+        int curr,index=0,x1=0;
         cin>>x>>y;
         x1=x;
-        x+=15;
         if(i==0){
-            curr=0;
-        }else curr=x;
+            curr=1000;
+        }
         
         if(y=='R'){
 
         for(int j=curr;j<curr+x1;j++){
-            arr[j]++;
+            ++arr[j];
+            index=j;
             }
         }else{
-            for(int j=curr;j>curr-x1+1;j--){
-            arr[j]++;
+            for(int j=curr;j>curr-x1;j--){
+            ++arr[j];
+            index=j;
             }
 
         }
+        curr=index;
     }
     
     int cnt=0;
@@ -36,5 +38,7 @@ int main() {
         }
     }
     cout<<cnt;
+
+
     return 0;
 }

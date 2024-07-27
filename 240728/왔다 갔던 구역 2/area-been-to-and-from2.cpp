@@ -8,7 +8,7 @@ int main() {
     cin>>n;
     int curr=1000;
     for(int i=0;i<n;i++){
-        int curr,index=0;
+        int index=0;
         cin>>x>>y;
     
         

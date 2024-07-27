@@ -11,7 +11,7 @@ int main() {
         int curr=0,x1=0;
         cin>>x>>y;
         x1=x;
-        x+=50;
+        x+=15;
         if(i==0){
             curr=0;
         }else curr=x;

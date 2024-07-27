@@ -21,14 +21,14 @@ int main() {
         for(int j=curr;j<curr+x1;j++){
             arr[j]++;
             }
-        }
-        else{
-            for(int j=curr;j>curr-x1;j--){
+        }else{
+            for(int j=curr;j>curr-x1+1;j--){
             arr[j]++;
             }
 
         }
     }
+    
     int cnt=0;
     for(int i=0;i<10000;i++){
         if(arr[i]>=2){

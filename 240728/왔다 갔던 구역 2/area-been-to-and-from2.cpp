@@ -21,7 +21,7 @@ int main() {
             index=j;
             }
         }else{
-            for(int j=curr;j>=curr-x;j--){
+            for(int j=curr;j>curr-x;j--){
             ++arr[j];
             index=j;
             }

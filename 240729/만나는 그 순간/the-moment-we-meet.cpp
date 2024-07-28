@@ -39,12 +39,14 @@ int main() {
         }
     }
     //cout<<endl<<endl;
+    int t=-1;
       for(int i=0;i<1000;i++){
         //cout<<arr_a[i]<<" ";
         if(i>0 && arr_a[i]==arr_b[i]){
-           cout<<i<<endl;
+           t=i;
             break;}
+        
     }
-
+    cout<<t;
     return 0;
 }

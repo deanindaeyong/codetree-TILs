@@ -6,12 +6,12 @@ int main() {
     cin>>n>>m;
     int distance;
     char direction;
-    int arr_a[1001]={0,},curr_a=0,cnt_a=0;
+    int arr_a[1001]={0,},curr_a=0,cnt_a=0,t_t=0;
     int arr_b[1001]={0,},curr_b=0,cnt_b=0;
     //a가이동한
     for(int i=0;i<n;i++){
         cin>>direction>>distance;
-        
+        t_t+=distance;
         if(direction=='R'){
             for(int j=curr_a;j<curr_a+distance;j++){
                 arr_a[j]=cnt_a++;
@@ -40,8 +40,8 @@ int main() {
     }
     //cout<<endl<<endl;
     int t=-1;
-      for(int i=0;i<1000;i++){
-        //cout<<arr_a[i]<<" ";
+      for(int i=0;i<t_t;i++){
+    
         if(i>0 && arr_a[i]==arr_b[i]){
            t=i;
             break;}

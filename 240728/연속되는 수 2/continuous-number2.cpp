@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 int n;
 
@@ -8,20 +9,11 @@ int main() {
     int arr[1000]={0,},max_t=0,max=1,cnt=0;
     for(int i=0;i<n;i++){
         cin>>arr[i];
-        if(i!=0 && arr[i]==arr[i-1]){
+        if(i==0 ||arr[i]!=arr[i-1]){
             cnt++;
-            
-        }else if(arr[i]!=arr[i-1]){
-  
-            max_t=cnt;
-            cnt=0;
-        }
-        if(max_t>max){
-            
-            max+=max_t;
-        
         }
     }
+    max(0,cnt);
     cout<<max;
     return 0;
 }

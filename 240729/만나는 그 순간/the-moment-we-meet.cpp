@@ -6,8 +6,8 @@ int main() {
     cin>>n>>m;
     int distance;
     char direction;
-    int arr_a[1001]={0,},curr_a=0,cnt_a=0,t_ta=0;
-    int arr_b[1001]={0,},curr_b=0,cnt_b=0,t_tb=0;
+    int arr_a[10001]={0,},curr_a=0,cnt_a=0,t_ta=0;
+    int arr_b[10001]={0,},curr_b=0,cnt_b=0,t_tb=0;
     //a가이동한
     for(int i=0;i<n;i++){
         cin>>direction>>distance;

@@ -32,17 +32,14 @@ int main() {
 
     }
    int cnt=0,cnt2=0;
-for(int i=0;i<1000;i++){
-    if(arra[i]>arrb[i]){
+for(int i=0;i<curr_ta;i++){
+   // cout<<arra[i]<<" "<<arrb[i]<<endl;
+    if(i>0 && arra[i]>arrb[i] && arra[i-1]<=arrb[i-1]){
         cnt++;
     }
 }
-for(int i=0;i<1000;i++){
-    if(arra[i]<arrb[i]){
-        cnt2++;
-    }
-}
-cout<<min(cnt,cnt2)+1;
+
+cout<<cnt+1;
 
     return 0;
 }

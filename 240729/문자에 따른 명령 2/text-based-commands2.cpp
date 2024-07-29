@@ -11,15 +11,11 @@ int main() {
     for(int i=0;i<d.length();i++){
         if(d[i]=='L'){
             dir=(dir-1+4)%4;
-       //     curr_x+=dx[dir];curr_y+=dy[dir];
-         //   cout<<curr_x<<" "<<curr_y<<endl;
         }else if(d[i]=='R'){
             dir=(dir+1)%4;
-          //  curr_x+=dx[dir];curr_y+=dy[dir];
         }else{
             dir=dir;
             curr_x+=dx[dir];curr_y+=dy[dir];
-         //   cout<<curr_x<<" "<<curr_y<<endl;
             } 
     }
     cout<<curr_x<<" "<<curr_y;

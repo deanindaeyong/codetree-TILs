@@ -36,10 +36,12 @@ for(int i=0;i<curr_tb;i++){
    // cout<<arra[i]<<" "<<arrb[i]<<endl;
     if(i>0 && arra[i]>arrb[i] && arra[i-1]<=arrb[i-1]){
         cnt++;
+    } else if(i>0 && arrb[i]>arra[i] && arrb[i-1]<=arra[i-1]){
+        cnt++;
     }
 }
 
-cout<<cnt;
+cout<<cnt-1;
 
     return 0;
 }

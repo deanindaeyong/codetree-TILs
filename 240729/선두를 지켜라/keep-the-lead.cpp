@@ -32,14 +32,14 @@ int main() {
 
     }
    int cnt=0,cnt2=0;
-for(int i=0;i<curr_ta;i++){
+for(int i=0;i<curr_tb;i++){
    // cout<<arra[i]<<" "<<arrb[i]<<endl;
     if(i>0 && arra[i]>arrb[i] && arra[i-1]<=arrb[i-1]){
         cnt++;
     }
 }
 
-cout<<cnt+1;
+cout<<cnt;
 
     return 0;
 }

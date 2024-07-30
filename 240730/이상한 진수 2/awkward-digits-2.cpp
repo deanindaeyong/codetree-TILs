@@ -15,7 +15,7 @@ int main() {
     
         }
     }
-    cout<<a<<endl;
+
     int num=0;
     for(int i=0;i<a.length();i++){
         num=num*2+(a[i]-'0');

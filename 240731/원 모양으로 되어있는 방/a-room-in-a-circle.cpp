@@ -13,7 +13,7 @@ int main() {
     for(int i=0;i<n;i++){
         int dis=0;
         int prev=0;
-        for(int j=0;j<=n;j++){
+        for(int j=0;j<n;j++){
             if(i==j)continue;
 			else if(j<i){
             dis+=arr[j]*abs(n-i+j);

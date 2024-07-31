@@ -20,11 +20,10 @@ int main() {
             for(int k=i+1;k<n;k++){
                 for(int l=0;l<n-2;l++){
                     
-                    if(arr[i][j]==1||arr[i][j+1]==1||arr[i][j+2]==1||
-                      arr[k][l]==1||arr[k][l+1]==1||arr[k][l+2]==1){
-                        cnt++;
-                      }
-                    max_t=max(max_t,cnt);
+                cnt=arr[i][j]+arr[i][j+1]+arr[i][j+2]+arr[k][l]+arr[k][l+1]+arr[k][l+2];   
+        
+    
+                max_t=max(max_t,cnt);
                 }
             }
             

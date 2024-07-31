@@ -1,4 +1,6 @@
 #include <iostream>
+#include <algorithm>
+#include <climits>
 using namespace std;
 int s,n;
 int main() {
@@ -10,22 +12,22 @@ int main() {
     }
     //  6 20
 //  5 7 9 1 13 8
-    int min=INT_MAX;
-    min=min(min,s-sum);
+    int min_v=INT_MAX;
+   
     for(int i=0;i<n;i++){
         for(int j=i+1;j<n;j++){
             int sum=0;
             for(int k=0;k<n;k++){
                 
-                if(k==i||k=j)continue;
+                if(k==i||k==j)continue;
                 else{
                     sum+=arr[k];
                 }
 
             }
-            min=min(min,s-sum);
+            min_v=min(min_v,abs(s-sum));
         }
     }
-cout<<sum;
+cout<<min_v;
     return 0;
 }

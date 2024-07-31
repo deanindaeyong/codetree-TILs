@@ -14,7 +14,7 @@ int main() {
     // 9 1 2 4 7 1
     for(int i=0;i<n-k+1;i++){
         int sum=0;
-        for(int j=i;j<n+i-k;j++)
+        for(int j=i;j<i+k;j++)
         sum+=arr[j];
         mx_v=max(mx_v,sum);
     }

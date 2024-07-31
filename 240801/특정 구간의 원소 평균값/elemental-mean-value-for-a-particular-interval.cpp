@@ -17,14 +17,16 @@ int main() {
                 sum+=arr[k];
                 cnt++;
             }
+            //cout<<endl;
             for(int l=i;l<=j;l++){
                 if((double)sum/cnt==(double)arr[l]){
-                  //  cout<<"sum/cnt= "<<(double)sum/cnt<<" arr[l]= "<<arr[l]<<endl;
+                  //cout<<"sum= "<<(double)sum<<" arr[l]= "<<arr[l]<<endl;
                     total++;
+                    break;
                 }
             }
         }
     }
-    cout<<total-1;
+    cout<<total;
     return 0;
 }

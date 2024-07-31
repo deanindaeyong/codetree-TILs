@@ -12,18 +12,21 @@ int main() {
             cin>>arr[i][j];
         
         }
-    }
+    } //n=6
+    //j=0 1 2
+   // 3
     int cnt=0;
     int max_t=0;
-    for(int i=0;i<n-1;i++){
-        for(int j=0;j<n-2;j++){
-            for(int k=i+1;k<n;k++){
-                for(int l=0;l<n-2;l++){
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n-5;j++){
+            for(int k=0;k<n;k++){
+                for(int l=j+3;l<n-2;l++){
                     
                 cnt=arr[i][j]+arr[i][j+1]+arr[i][j+2]+arr[k][l]+arr[k][l+1]+arr[k][l+2];   
-        
+               //         cout<<"i= "<<i<<" j= "<<j<<" k= "<<k<<" l= "<<l<<endl;
+                   //     cnt++;
     
-                max_t=max(max_t,cnt);
+                    max_t=max(max_t,cnt);
                 }
             }
             

@@ -16,6 +16,10 @@ int main() {
             
         }
     }
+    if(k>100){
+        cout<<mx;
+        return 0;
+    }
     
     for(int i=0;i<100;i++){
         

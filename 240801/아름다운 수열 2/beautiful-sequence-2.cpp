@@ -1,6 +1,12 @@
 #include <iostream>
 using namespace std;
 int n,m;
+int num_t(int a){
+    if(a==1){
+        return 1;
+    }
+    return num_t(a-1)*a;
+}
 int main() {
     // 여기에 코드를 작성해주세요.
     cin>>n>>m;
@@ -24,10 +30,12 @@ int main() {
            }
        //    cout<<"cnt= "<<cnt<<endl;
         }
-        if(cnt>=m){
+        if(cnt>=m&& cnt<=num_t(m)){
             cnt_t++;
            }
     }
+  
+  
     cout<<cnt_t;
     return 0;
 }

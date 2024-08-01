@@ -14,7 +14,7 @@ int main() {
         
     }
     if(k>100){
-        for(int i=0;i<100;i++){
+        for(int i=0;i<=100;i++){
             mx+=arr[i];
         }
         cout<<mx;

@@ -19,11 +19,12 @@ int main() {
            for(int k=0;k<m;k++){
             if(a[j]==b[k]){
                 cnt++;
+            //    cout<<"a[j]= "<<a[j]<<" b[k]="<<b[k]<<endl;
             }
            }
-           
+       //    cout<<"cnt= "<<cnt<<endl;
         }
-        if(cnt==m){
+        if(cnt>=m){
             cnt_t++;
            }
     }

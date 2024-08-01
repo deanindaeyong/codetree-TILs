@@ -19,7 +19,7 @@ int main() {
             if(i-k<0) continue;
             int cnt=0;
             for(int l=i-k;l<=i+k;l++){
-                if(l>=100)continue;
+                if(l>100)continue;
                 cnt+=arr[l];
             }
             mx=max(mx,cnt);

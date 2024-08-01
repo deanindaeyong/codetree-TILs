@@ -11,8 +11,9 @@ int main() {
         int a,b;
         cin>>a>>b;
         arr[b]+=a;
-        if(k>=100){
+        if(k>100){
             mx+=arr[b];
+            
         }
     }
     

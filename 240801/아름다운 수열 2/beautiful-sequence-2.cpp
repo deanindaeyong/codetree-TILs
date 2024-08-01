@@ -30,7 +30,7 @@ int main() {
            }
        //    cout<<"cnt= "<<cnt<<endl;
         }
-        if(cnt>=m&& cnt<=num_t(m)){
+        if(cnt>=m|| cnt<=num_t(m)){
             cnt_t++;
            }
     }

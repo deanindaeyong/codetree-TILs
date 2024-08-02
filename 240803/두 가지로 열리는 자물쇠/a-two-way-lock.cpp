@@ -7,10 +7,10 @@ bool dis(int a, int b){
         
         return true;
     }
-    else if(abs(n-a+b)<=2){ return true;}
+    else if(n-abs(a-b)<=2){ return true;}
       // 10,9,8,7,1
     // 1,2,3,4,5
-
+//(abs(n-a+b))
     else return false;
 }
 int main() {

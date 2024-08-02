@@ -17,12 +17,14 @@ int main() {
     int total_min=INT_MAX;
     int cnt=0;
     for(int i=0;i<6;i++){
-        for(int j=i+1;j<6;j++){
-            for(int k=j+1;k<6;k++){
-                for(int l=j+1;l<6;l++){
+        for(int j=0;j<6;j++){
+            for(int k=0;k<6;k++){
+                for(int l=0;l<6;l++){
+                    if(i==j ||i==k||i==l||j==k||j==l||k==l)
+                    continue;
                     cnt++;
-                    sum1=arr[j]+arr[l];
-                    sum2=arr[i]+arr[k];
+                    sum1=arr[k]+arr[l];
+                    sum2=arr[i]+arr[j];
                     sum3=total-sum1-sum2;
                     maxx=max({sum1,sum2,sum3});
                     minn=min({sum1,sum2,sum3});

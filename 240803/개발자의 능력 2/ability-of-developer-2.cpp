@@ -21,8 +21,8 @@ int main() {
             for(int k=j+1;k<6;k++){
                 for(int l=k+1;l<6;l++){
                     cnt++;
-                    sum1=arr[k]+arr[j];
-                    sum2=arr[i]+arr[l];
+                    sum1=arr[l]+arr[j];
+                    sum2=arr[i]+arr[k];
                     sum3=total-sum1-sum2;
                     maxx=max({sum1,sum2,sum3});
                     minn=min({sum1,sum2,sum3});

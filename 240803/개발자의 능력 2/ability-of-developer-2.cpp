@@ -19,9 +19,9 @@ int main() {
     for(int i=0;i<6;i++){
         for(int j=i+1;j<6;j++){
             for(int k=j+1;k<6;k++){
-                for(int l=k+1;l<6;l++){
+                for(int l=j+1;l<6;l++){
                     cnt++;
-                    sum1=arr[l]+arr[j];
+                    sum1=arr[j]+arr[l];
                     sum2=arr[i]+arr[k];
                     sum3=total-sum1-sum2;
                     maxx=max({sum1,sum2,sum3});

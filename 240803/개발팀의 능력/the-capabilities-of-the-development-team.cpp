@@ -28,6 +28,10 @@ int main() {
             }
         }
     }
+    if(minn==INT_MAX){
+        cout<<-1;
+        return 0;
+    }
     cout<<minn;
     return 0;
 }

@@ -3,9 +3,10 @@
 #define MAX_NUM 40000
 using namespace std;
 int n;
-int x[40000],y[40000];
+int x[100],y[100];
 int main() {
     // 여기에 코드를 작성해주세요.
+    cin>>n;
     int arr[40000][2];
     for(int i=0;i<n;i++){
         cin>>x[i]>>y[i];

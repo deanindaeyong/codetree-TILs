@@ -8,8 +8,9 @@ int main() {
     for(int i=0;i<n;i++){
         cin>>x[i];
     }
+    
     int ans=INT_MIN;
-    int index;
+    int index=-1;
     for(int i=0;i<n;i++){
         for(int j=0;j<n;j++){
             if(i==j) continue;

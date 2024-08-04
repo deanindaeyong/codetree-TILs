@@ -4,7 +4,7 @@ using namespace std;
 int n,k;
 int main() {
     cin>>n>>k;
-    int x[100];
+    int x[100]={0,};
     for(int i=0;i<n;i++){
         cin>>x[i];
     }

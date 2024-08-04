@@ -5,7 +5,7 @@ int n;
 
 int main() {
     // 여기에 코드를 작성해주세요.
-    int ans=INT_MIN;
+    int ans=0;
     cin>>n;
     int x1[100],x2[100];
     for(int i=0;i<n;i++){
@@ -19,6 +19,9 @@ int main() {
                 cnt--;
             }
         }
+    }
+    if(cnt<0){
+        cnt=0;
     }
     cout<<cnt;
     return 0;

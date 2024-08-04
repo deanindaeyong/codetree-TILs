@@ -19,7 +19,7 @@ int main() {
     }
     sort(arr,arr+n);
 
-    int cnt=n;
+    int cnt=n+1;
     /*for(int i=0;i<n;i++){
         int sum=0;
         sum+=arr[i]*0.5;
@@ -33,11 +33,13 @@ int main() {
     }
     */
     while(cnt--){
+       // cout<<cnt<<endl;
         int sum=0;
         for(int j=0;j<cnt-1;j++){
             sum+=arr[j];
         }
         sum+=0.5*arr[cnt-1];
+        //cout<<sum<<" "<<cnt<<endl;
         if(sum<=b){
             break;
         } else cnt--;
@@ -45,3 +47,4 @@ int main() {
     cout<<cnt;
     return 0;
 }
+//10+8+6+4+2+2

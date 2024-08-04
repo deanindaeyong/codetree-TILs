@@ -19,33 +19,24 @@ int main() {
 
     int total_cnt=0;
     for(int i=0;i<n;i++){
-       int cnt=0;
-       int prev=0;
-        for(int j=0;j<n;j++){
-          //  l 0123
-         //   j 01234
-          //  00
-            
+        
+        for(int j=0;j<n;j++){ 
+            int cnt=0;     
             for(int l=0;l<k;l++){
                 if(j==i) continue;
-                if(arr[l][j]>arr[l][i])
-
-                cnt++;
-
+                if(arr[l][i]>arr[l][j])
+                {cnt++;
+                //cout<<"arr[l][i]=  "<<arr[l][i]<<" arr[l][j]= "<<arr[l][j]<<endl;
+            
+                }
             }
         if(cnt==k){
             total_cnt++;
         }
-        prev++;
-        //    cout<<"j = "<<j <<" i = "<< i <<" cnt= "<<cnt<<endl;
-        }
-        
-        
+      
+        }   
     }
-    cout<<total_cnt-1;
-   /* arr[0][0] arr[0][1] arr[0][2] arr[0][3]
-    arr[1][0] arr[1][1] arr[1][2] arr[1][3]
-    arr[2][0] arr[2][1] arr[]
-    */
+    cout<<total_cnt;
+
     return 0;
 }

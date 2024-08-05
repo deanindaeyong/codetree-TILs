@@ -31,7 +31,7 @@ int main() {
         }
         if(sum<=b){
             cout<<numb;
-            break;
+            return 0;
         }else numb--;
 
     }

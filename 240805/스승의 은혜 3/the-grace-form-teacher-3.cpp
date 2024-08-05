@@ -1,34 +1,34 @@
 #include <iostream>
 #include <algorithm>
 using namespace std;
+bool compare(pair<int,int>a,pair<int,int> b){
+    if(a.first+a.second==b.second+b.first){
+       if(a.first==b.first){
+       return a.second<b.second;
+       }else return a.first<b.first;
+    }else return a.first+a.second<b.first+b.second;
+
+}
 int b,n;
 int main() {
     // 여기에 코드를 작성해주세요.
     cin>>n>>b;
-    int p[1000],s[1000],ps[1000];
+    pair<int,int> arr[1000];
+
     for(int i=0;i<n;i++){
-        cin>>p[i]>>s[i];
-        ps[i]=p[i];
+        cin>>arr[i].first>>arr[i].second;
     }
-    sort(ps,ps+n);
-    int cnt=0,numb=n,i=0,sum_t=0;
-    while(numb>=0){
+    sort(arr,arr+n,compare);
+ //   for(int i=0;i<n;i++){
+ //       cout<<arr[i].first<<" "<<arr[i].second<<endl;
+  // }
+    int numb=n;
+    while(numb>0){
         int sum=0;
         for(int i=0;i<numb-1;i++){
-            sum+=ps[i];
-            for(int j=0;j<n;j++){
-                if(ps[i]==p[j]){
-                    sum+=s[j];
-                }
-            }
+            sum+=arr[i].first+arr[i].second;
         }
-        sum+=ps[numb-1]*0.5;
-        for(int j=0;j<n;j++){
-            if(ps[numb-1]==p[j]){
-                sum+=s[j];
-                break;
-            }
-        }
+        sum+=(arr[numb-1].first*0.5)+arr[numb-1].second;
         if(sum<=b){
             cout<<numb;
             return 0;

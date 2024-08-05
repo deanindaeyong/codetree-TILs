@@ -8,9 +8,10 @@ bool Int_number(string a){
             if(i==j)continue;
             if(a[i]==a[j]){
                 cnt++;
+                break;
             }
         }
-    }
+    } 
     if(len-1==cnt){
         return true;
     }

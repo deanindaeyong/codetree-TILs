@@ -3,9 +3,7 @@
 using namespace std;
 bool compare(pair<int,int>a,pair<int,int> b){
     if(a.first+a.second==b.second+b.first){
-       if(a.first==b.first){
-       return a.second<b.second;
-       }else return a.first<b.first;
+       return a.first<b.first;
     }else return a.first+a.second<b.first+b.second;
 
 }
@@ -19,9 +17,9 @@ int main() {
         cin>>arr[i].first>>arr[i].second;
     }
     sort(arr,arr+n,compare);
- //   for(int i=0;i<n;i++){
- //       cout<<arr[i].first<<" "<<arr[i].second<<endl;
-  // }
+    for(int i=0;i<n;i++){
+        cout<<arr[i].first<<" "<<arr[i].second<<endl;
+   }
     int numb=n;
     while(numb>0){
         int sum=0;
@@ -37,3 +35,12 @@ int main() {
     }
     return 0;
 }
+/*200
+300
+299 799
+200 999
+
+200
+299 499
+299 798
+200 100 */

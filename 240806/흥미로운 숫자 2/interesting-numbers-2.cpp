@@ -1,25 +1,17 @@
 #include <iostream>
 using namespace std;
-bool Int_number(int a){
-    int b=a;
-    int arr[7];
-    int index=0,cnt=0;
-    for(int i=0;i<7;i++){
-        arr[i]=b%10;
-        b/=10;
-        index=i;
-        if(b<10) break;
-    }
-    arr[++index]=b;
-    for(int i=0;i<=index-1;i++){
-        for(int j=i+1;j<=index;j++){
-            if(arr[i]==arr[j]){
+bool Int_number(string a){
+    int len=a.length();
+    int cnt=0;
+    for(int i=0;i<len;i++){
+        for(int j=0;j<len;j++){
+            if(i==j)continue;
+            if(a[i]==a[j]){
                 cnt++;
             }
         }
-
     }
-    if(index-1==cnt){
+    if(len-1==cnt){
         return true;
     }
    else return false;
@@ -30,7 +22,8 @@ int main() {
     cin>>x>>y;
     int cntt=0;
     for(int i=x;i<=y;i++){
-        if(Int_number(i)){
+        string m=to_string(i);
+        if(Int_number(m)){
             cntt++; 
         }
     }

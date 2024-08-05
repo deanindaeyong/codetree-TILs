@@ -12,7 +12,7 @@ int main() {
     }
     sort(ps,ps+n);
     int cnt=0,numb=n,i=0,sum_t=0;
-    while(numb>0){
+    while(numb>=0){
         int sum=0;
         for(int i=0;i<numb-1;i++){
             sum+=ps[i];

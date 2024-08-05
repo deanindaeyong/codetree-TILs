@@ -4,7 +4,7 @@ using namespace std;
 bool compare(pair<int,int>a,pair<int,int> b){
     if(a.first+a.second==b.second+b.first){
        return a.first<b.first;
-    }else return a.first+a.second<b.first+b.second;
+    }else return a.first<b.first;
 
 }
 int b,n;
@@ -44,3 +44,11 @@ int main() {
 299 499
 299 798
 200 100 */
+/*
+5 997
+200 0
+200 100
+198 101
+198 101
+198 101
+*/

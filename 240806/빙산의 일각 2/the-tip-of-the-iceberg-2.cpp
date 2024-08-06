@@ -13,7 +13,7 @@ int main() {
     for(int i=1;i<=1000;i++){
         int cnt=0;//빙산 갯수
         bool bingstart=false;
-        for(int j=0;j<=n;j++){
+        for(int j=0;j<n;j++){
             
             if(arr[j]>i){
                 if(!bingstart){

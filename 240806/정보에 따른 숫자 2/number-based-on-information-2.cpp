@@ -2,11 +2,11 @@
 #include <climits>
 using namespace std;
 int t,a,b;
-char c[1000];
+char c[1001];
 int dis(int k, char b){
     int minn=INT_MAX;
     int index;
-    for(int i=0;i<=1000;i++){
+    for(int i=1;i<=1000;i++){
         if(c[i]==b){
             index=abs(k-i);
             
@@ -24,12 +24,12 @@ int main() {
         cin>>x>>m;
         c[m]=x;
     }
-    int u,v;
+    int d1,d2;
     int cnt=0;
     for(int i=a;i<=b;i++){
-        u=dis(i,'S');
-        v=dis(i,'N');
-        if(u<=v){
+        d1=dis(i,'S');
+        d2=dis(i,'N');
+        if(d1<=d2){
             cnt++;
         }
     }

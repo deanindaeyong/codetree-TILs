@@ -11,7 +11,8 @@ int main() {
             for(int k=0;k<=1000;k++){
                 if(j*a+b*k==i){
                     maxx=max(maxx,j*a+b*k);
-                    
+                    cout<<maxx;
+                    return 0;
                 }
             }
         }

@@ -9,7 +9,7 @@ int main() {
     for(int i=c;i>0;i--){
         for(int j=0;j<=1000;j++){
             for(int k=0;k<=1000;k++){
-                if(j*a+b*k<=i){
+                if(j*a+b*k==i){
                     maxx=max(maxx,j*a+b*k);
                     
                 }

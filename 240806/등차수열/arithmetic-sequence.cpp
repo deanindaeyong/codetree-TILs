@@ -16,14 +16,16 @@ int main() {
                 if(k-arr[i]==arr[j]-k){
                     ans[k]++;
                 }
+
             }
         }
     }
+    int maxx=-1;
     for(int i=0;i<=101;i++){
         if(ans[i]>=1){
-            cnt+=ans[i];
+            maxx=max(maxx,ans[i]);
         }
     }
-    cout<<cnt;
+    cout<<maxx;
     return 0;
 }

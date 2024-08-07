@@ -9,11 +9,13 @@ int main() {
     for(int i=1;i<=n;i++){
         cin>>arr[i];
     }
+
     int maxx=-1;
+
     for(int i=1;i<=n;i++){
         int sum=0;
         int x=i;
-        while(m--){
+        for(int j=m;j>0;j--){
             sum+=arr[x];
             x=arr[x];
         }

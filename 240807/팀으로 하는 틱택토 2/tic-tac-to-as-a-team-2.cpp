@@ -18,9 +18,10 @@ int main() {
     }
     for(int i=0;i<=10;i++){
         if(arr[i]>maxx){
-            maxx=arr[i];
+            maxx++;
         }
     }
+    maxx--;
     int cnt=0;
 
     for(int i=0;i<3;i++){

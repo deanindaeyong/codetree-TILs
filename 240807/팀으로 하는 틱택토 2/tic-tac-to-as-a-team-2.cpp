@@ -21,7 +21,7 @@ int main() {
             maxx++;
         }
     }
-    maxx--;
+    
     int cnt=0;
 
     for(int i=0;i<3;i++){

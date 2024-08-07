@@ -6,11 +6,10 @@ int main() {
     // 여기에 코드를 작성해주세요.
     string a,b,c;
     int arr[11]={0,},maxx=0;;
-    
             cin>>a;
             cin>>b;
             cin>>c;
-    
+    // Maximum 경우의 수
     for(int i=0;i<3;i++){
         arr[(a[i])-'0']++;
         arr[(b[i])-'0']++;
@@ -21,9 +20,8 @@ int main() {
             maxx++;
         }
     }
-    
     int cnt=0;
-
+    // 모든 경우의 수 
     for(int i=0;i<3;i++){
             //case 1
             if((a[i]==b[i] &&a[i]!=c[i])||(a[i]!=b[i]&&a[i]==c[i] )||(a[i]!=b[i]&&b[i]==c[i])){
@@ -43,20 +41,13 @@ int main() {
             {
                 if((a[i]==b[i-1] &&a[i]!=c[i-2])||(a[i]!=b[i-1]&&a[i]==c[i-2] )||(a[i]!=b[i-1]&&b[i-1]==c[i-2]))
                 cnt++;
-            }
-
-        
+            }   
     }
+    //맥시멈 경우의 수 초과 일경우
+    //경우의 수는 맥시멈
     if(maxx<cnt){
         cnt=maxx-1;
     }
-    cout<<cnt;
-
-   // 111  010.  001. 000. 000   
-   // 11.  010   011. 111. 000
-   // 1 1. 010.  101. 000. 111
-
-    
-    
+    cout<<cnt;    
     return 0;
 }

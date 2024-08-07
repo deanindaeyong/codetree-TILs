@@ -47,9 +47,9 @@ int main() {
 
         
     }
-    if(maxx<cnt){
-        cnt=maxx;
-    }
+   // if(maxx<cnt){
+    //    cnt=maxx;
+   // }
     cout<<cnt;
 
    // 111  010.  001. 000. 000   

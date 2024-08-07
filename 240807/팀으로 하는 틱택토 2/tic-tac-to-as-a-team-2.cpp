@@ -17,7 +17,7 @@ int main() {
         arr[(c[i])-'0']++;
     }
     for(int i=0;i<=10;i++){
-        if(arr[i]>maxx){
+        if(arr[i]>0){
             maxx++;
         }
     }
@@ -47,9 +47,9 @@ int main() {
 
         
     }
-   // if(maxx<cnt){
-    //    cnt=maxx;
-   // }
+    if(maxx<cnt){
+        cnt=maxx-1;
+    }
     cout<<cnt;
 
    // 111  010.  001. 000. 000   

@@ -1,15 +1,28 @@
 #include <iostream>
+#include <algorithm>
 using namespace std;
 
 int main() {
     // 여기에 코드를 작성해주세요.
     string a,b,c;
+    int arr[11],maxx=0;;
     
             cin>>a;
             cin>>b;
             cin>>c;
-
+    
+    for(int i=0;i<3;i++){
+        arr[(a[i])-'0']++;
+        arr[(b[i])-'0']++;
+        arr[(c[i])-'0']++;
+    }
+    for(int i=0;i<=10;i++){
+        if(arr[i]>maxx){
+            maxx=arr[i];
+        }
+    }
     int cnt=0;
+
     for(int i=0;i<3;i++){
             //case 1
             if((a[i]==b[i] &&a[i]!=c[i])||(a[i]!=b[i]&&a[i]==c[i] )||(a[i]!=b[i]&&b[i]==c[i])){
@@ -32,6 +45,9 @@ int main() {
             }
 
         
+    }
+    if(maxx<cnt){
+        cnt=maxx;
     }
     cout<<cnt;
 

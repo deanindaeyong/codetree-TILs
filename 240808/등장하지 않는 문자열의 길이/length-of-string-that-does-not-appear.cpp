@@ -7,14 +7,22 @@ int main() {
     cin>>n;
     cin>>a;
     int cnt=0;
-    for(int i=0;i<n;i++){
-        string temp=a.substr(0,i+1);
-        for(int j=i+1;j<n;j++){
-            if(temp==a.substr(j,i+1)){
+    bool find=false;
+    //
+    int index=0;
+    string temp;
+    for(int i=0;i<n;i++){ //cnt=2
+        
+        if(!find){
+            temp=a.substr(i,cnt+1); // 
+        }else {temp+=a.substr(i+1,1);} //1 
+        for(int j=i+1;j<n;j++){     
+            if(temp==a.substr(j,cnt+1)){// 1 2
                 cnt++;
-                //cout<<temp<<endl;
+                find=true;
+               
                 break;
-            }
+            }else find =false;
         }
     }
     cout<<cnt+1;

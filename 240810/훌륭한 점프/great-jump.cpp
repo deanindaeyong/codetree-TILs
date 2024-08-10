@@ -27,15 +27,14 @@ int main() {
         maxxx=max(maxxx,a[i]);
     }
     int minn=100,maxx=-1;
-    for(int i=2;i<=maxxx;i++){
+    for(int i=1;i<=max(a[0],a[n-1]);i++){
         if(ok(i)){
             maxx=max(maxx,i);
-            cout<<maxx<<endl;
-            break;
+
         }
         
     }
-
-    //cout<<maxx;
+//cout<<minn<<endl;
+    cout<<maxx;
     return 0;
 }

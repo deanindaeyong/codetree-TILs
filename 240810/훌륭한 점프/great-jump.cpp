@@ -1,40 +1,34 @@
 #include <iostream>
-#include <algorithm> // min_element, max_element 사용을 위해 필요
+#include <algorithm>
+#include <climits>
+
 using namespace std;
 
-int n, k;
-int a[100];
+int minMaxValueOnPath(int n, int k, int arr[]) {
+    int dp[100];  // n의 최대 크기인 100으로 고정 크기 배열 사용
+    fill_n(dp, 100, INT_MAX); // dp 배열을 INT_MAX로 초기화
+    dp[0] = arr[0];
 
-bool ok(int max_val) {
-    int last_position = 0; // 시작 위치는 0 (첫 돌)
-    for (int i = 1; i < n; i++) {
-        if (a[i] <= max_val && i - last_position <= k) {
-            last_position = i;
+    for (int i = 1; i < n; ++i) {
+        for (int j = max(0, i - k); j < i; ++j) {
+            dp[i] = min(dp[i], max(dp[j], arr[i]));
         }
     }
-    return last_position == n - 1; // 마지막 돌에 도달했는지 확인
+
+    return dp[n - 1];
 }
 
 int main() {
+    int n, k;
     cin >> n >> k;
-    for (int i = 0; i < n; i++) {
-        cin >> a[i];
+
+    int arr[100];  // n의 최대 크기인 100으로 고정 크기 배열 사용
+    for (int i = 0; i < n; ++i) {
+        cin >> arr[i];
     }
 
-    int left = *min_element(a, a + n); // 배열의 최소값
-    int right = *max_element(a, a + n); // 배열의 최대값
-    int answer = right;
+    int result = minMaxValueOnPath(n, k, arr);
+    cout << result << endl;
 
-    while (left <= right) {
-        int mid = (left + right) / 2;
-        if (ok(mid)) {
-            answer = mid;
-            right = mid - 1;
-        } else {
-            left = mid + 1;
-        }
-    }
-
-    cout << answer << endl;
     return 0;
 }

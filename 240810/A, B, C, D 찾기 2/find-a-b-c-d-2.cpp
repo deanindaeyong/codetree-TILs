@@ -21,16 +21,3 @@ int main() {
     cout<<a<<" "<<b<<" "<<c<<" "<<d;
     return 0;
 }
-/*
-    for(int i=1;i<=40;i++){
-        for(int j=1;j<=40;j++){
-            for(int k=1;k<=40;k++){
-                for(int l=1;l<=40;l++){
-                    if(cor(i,j,k,l)){
-                        cout<<i<<" "<<j<<" "<<k<<" "<<l;
-                        return 0;
-                    }
-                }
-            }
-        }
-    }*/

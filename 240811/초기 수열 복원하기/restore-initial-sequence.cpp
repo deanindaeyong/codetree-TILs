@@ -13,14 +13,14 @@ int main() {
         ans[0]=i;
         for(int j=0;j<n-1;j++){
             ans[j+1]=a[j]-ans[j];
-            if(ans[j+1]==ans[j]){
+            if(ans[j+1]==ans[j] ){
                 break;
             }
         }
         for(int k=0;k<n;k++){
          for(int j=0;j<n;j++){
             if(k==j) continue;
-            if(ans[k]==ans[j]){
+            if(ans[k]==ans[j]|| ans[j]<1){
                 nok=true;
             }
          }   

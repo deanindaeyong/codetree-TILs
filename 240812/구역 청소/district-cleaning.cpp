@@ -7,10 +7,10 @@ int main() {
     cin>>a>>b;
     cin>>c>>d;
     int arr[101]={0,};
-    for(int i=a;i<=b;i++){
+    for(int i=a;i<b;i++){
         arr[i]++;
     }
-    for(int i=c;i<=d;i++){
+    for(int i=c;i<d;i++){
         arr[i]++;
     }
     int cnt=0;
@@ -19,6 +19,8 @@ int main() {
             cnt++;
         }
     }
-    cout<<cnt-1;
+    cout<<cnt;
     return 0;
 }
+// 1234
+//.  678910

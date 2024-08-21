@@ -8,6 +8,7 @@ int main() {
     int cnt=0;
     // cnt ==0
     if(c-b==1 && b-a==1){
+        cnt=0;
     }
     //b-a=1
     else if(b-a<=2 || c-b<=2){

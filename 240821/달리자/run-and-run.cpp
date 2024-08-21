@@ -12,10 +12,10 @@ int main() {
     int sum=0;
     for(int i=n-1;i>=0;i--){
         for(int j=i;j>=0;j--){
-            if(a[j]==b[i])break;
+            if(a[i]==b[i])break;
             if(i==j) continue;
             int dis=i-j;
-            while(a[j]>=0){
+            while(a[j]>0){
                 --a[j];
                 ++a[i];
                 sum+=dis;

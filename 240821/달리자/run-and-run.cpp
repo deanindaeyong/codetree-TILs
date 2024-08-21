@@ -15,7 +15,7 @@ int main() {
             if(a[j]==b[i])break;
             if(i==j) continue;
             int dis=i-j;
-            while(a[j]>0){
+            while(a[j]>=0){
                 --a[j];
                 ++a[i];
                 sum+=dis;

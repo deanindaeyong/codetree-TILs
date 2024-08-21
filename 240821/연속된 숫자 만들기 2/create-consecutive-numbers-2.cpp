@@ -8,7 +8,6 @@ int main() {
     int cnt=0;
     // cnt ==0
     if(c-b==1 && b-a==1){
-        cout<<cnt;
     }
     //b-a=1
     else if(b-a<=2 || c-b<=2){

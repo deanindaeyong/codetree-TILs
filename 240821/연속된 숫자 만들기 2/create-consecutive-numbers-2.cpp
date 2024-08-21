@@ -15,10 +15,14 @@ int main() {
            if(b-a==2) {
             c=a+1;
             swap(c,b);
+           // cout<<1<<endl;
             //3 6 7
            }else {
             c=a+2;
-            swap(c,b);}
+            swap(c,b);
+           // cout<<2<<endl;
+           }
+            
         }
         // 4 5
         else if(b-a==1){
@@ -26,23 +30,36 @@ int main() {
             if(c-b==2){
                 a=c-1;
                 swap(a,b);
+              //  cout<<3<<endl;
             }else {
                 a=c-2;
                 swap(b,a);
+             //   cout<<4<<endl;
             }
 
         }else {
-            if(c-b>b-a){
+            if(c-b==2){
+                a=c-1;
+                swap(a,b);
+            }
+            else if(b-a==2){
+                c=a+1;
+                swap(b,c);
+            }
+            else if(c-b>b-a){
                 a=c-2;
                 swap(a,b);
+              //  cout<<5<<endl;
             }
             else if(b-a>c-b){
                 c=a+2;
                 swap(b,c);
+              //  cout<<6<<endl;
                 
             }else{
                 c=a+1;
                 swap(b,c);
+               // cout<<7<<endl;
             }
 
         }

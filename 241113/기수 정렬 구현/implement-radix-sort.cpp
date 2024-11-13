@@ -7,8 +7,9 @@ using namespace std;
 int n,arr[MAX_N];
 void radix_sor(){
     int p=1;
-    vector<int> new_arr[MAX_DIGIT];
+    
     for(int pos=0;pos<MAX_K;pos++){
+        vector<int> new_arr[MAX_DIGIT];
         for(int i=0;i<n;i++){
             int digit=(arr[i]/p)%10;
             new_arr[digit].push_back(arr[i]);

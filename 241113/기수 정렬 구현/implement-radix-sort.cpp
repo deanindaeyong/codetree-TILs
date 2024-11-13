@@ -2,16 +2,15 @@
 using namespace std;
 int n,arr[100000];
 int set_digit(int num,int pos){
-    while(pos>0){
+    for(int i=0;i<pos;i++){
         num=num/10;
-        pos--;
     }
     num=num%10;
     return num;
 }
 
 void radix_sort(){
-    for(int pos=6;pos>=0;pos--){
+    for(int pos=0;pos<6;pos++){
         int arr_new[10][100000]={};
         int bucket[10]={};
         for(int i=0;i<n;i++){

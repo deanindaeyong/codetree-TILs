@@ -14,14 +14,13 @@ int main() {
         }
         else{
             if(st.empty()){
-                cout<<"No";
                 correct=false;
             }
             st.pop();
         }
     }
-    if(!correct){
-        cout<<"No";
-    }else cout<<"Yes";
+    if(st.empty() && correct){
+        cout<<"Yes";
+    }else cout<<"No";
     return 0;
 }

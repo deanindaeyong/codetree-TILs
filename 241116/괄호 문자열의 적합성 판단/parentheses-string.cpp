@@ -19,7 +19,7 @@ int main() {
             st.pop();
         }
     }
-    if(!st.empty()){
+    if(!st.empty() || !correct){
         cout<<"No";
     }else cout<<"Yes";
     return 0;

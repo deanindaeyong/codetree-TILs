@@ -16,6 +16,7 @@ int main() {
         else{
             if(st.empty()){
                 correct=false;
+                break;
             }
             st.pop();
         }

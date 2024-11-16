@@ -19,8 +19,8 @@ int main() {
             st.pop();
         }
     }
-    if(st.empty() && correct){
-        cout<<"Yes";
-    }else cout<<"No";
+    if(!st.empty()){
+        cout<<"No";
+    }else cout<<"Yes";
     return 0;
 }

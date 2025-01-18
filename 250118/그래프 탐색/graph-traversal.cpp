@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
-int graph[1000][1000]={0,};
-bool visited[1000]={false,};
+int graph[1001][1001]={0,};
+bool visited[1001]={false,};
 int n,m;
 int cnt=0;
 int maxx=0;

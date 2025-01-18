@@ -33,6 +33,7 @@ int main() {
             cin>>map[i][j];
         }
     }
+     safety.push_back({1,0});
     for(int k=1;k<=100;k++){
         int cnt=0;
         memset(visited, false, sizeof(visited));
@@ -48,7 +49,7 @@ int main() {
         }
         if(maxx<cnt){
             maxx=cnt;
-            safety.push_back({maxx,k});
+            safety.push_back({k,maxx});
         }
     }
     sort(safety.rbegin(),safety.rend());

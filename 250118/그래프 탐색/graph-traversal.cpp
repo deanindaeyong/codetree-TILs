@@ -4,9 +4,9 @@ int graph[1000][1000]={0,};
 bool visited[1000]={false,};
 int n,m;
 int cnt=0;
-int maxx=-1;
+int maxx=0;
 void dfs(int vertex){
-    for(int i=1;i<=n;i++){
+    for(int i=2;i<=n;i++){
         if(graph[vertex][i]==1&&!visited[i]){
             visited[i]=true;
             cnt++;
@@ -29,7 +29,7 @@ int main() {
 
     }
     dfs(1);
-    cout<<maxx-1;
+    cout<<maxx;
     // Please write your code here.
     return 0;
 }

@@ -44,12 +44,14 @@ int main() {
     for(int i=0;i<k;i++){
         int x,y;
         cin>>x>>y;
-        visited[x][y]=true;
-        if(grid[x][y]==0){
+        x-=1;
+        y-=1;
+        if(cango(x,y)){
             answer++;
+            visited[x][y]=true;
         }
         
-        q.push({make_pair(x,y)});
+        q.push(make_pair(x,y));
         bfs();
     }
     cout<<answer;

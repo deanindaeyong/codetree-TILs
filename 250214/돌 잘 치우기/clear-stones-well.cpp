@@ -3,7 +3,8 @@
 #include <vector>
 using namespace std;
 int n,m,k;
-int visited[101][101],grid[101][101]={0,};
+bool visited[101][101];
+int grid[101][101]={0,};
 int dx[]={-1,1,0,0};
 int dy[]={0,0,-1,1};
 vector<pair<int,int>> starts,rocks;

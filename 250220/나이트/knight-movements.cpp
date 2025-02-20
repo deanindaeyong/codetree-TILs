@@ -5,9 +5,11 @@ int n,r1,c1,r2,c2;
 int grid[101][101]={0,};
 int dx[]={-2,-1,1,2,2,1,-1,-2};
 int dy[]={1,2,2,1,-1,-2,-2,-1};
+bool visited[101][101]={false,};
 
 bool cango(int x,int y){
     if(x<0||y<0||x>=n||y>=n) return false;
+    if(visited[x][y]) return false;
     return true;
 }
 struct fact{
@@ -31,6 +33,7 @@ int bfs(){
             int ny=y+dy[i];
             if(cango(nx,ny)){
                 q.push({nx,ny,s+1});
+                visited[nx][ny]=true;
             }
         }
     }

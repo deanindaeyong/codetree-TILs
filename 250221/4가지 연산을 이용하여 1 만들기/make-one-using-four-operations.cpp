@@ -6,8 +6,10 @@ int n;
 
 
 queue<pair<int,int>> q;
+bool visited[1000001]={false,};
 int bfs(){
     q.push({n,0});
+    visited[n]=true;
     while(!q.empty()){
         int x=q.front().first;
         int y=q.front().second;
@@ -41,7 +43,10 @@ int bfs(){
 
             
             }
+            if(!visited[nx]){
             q.push({nx,y+1});
+            visited[nx]=true;
+            }
         }
     }
 

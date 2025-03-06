@@ -31,6 +31,8 @@ void func(int idx,vector<pair<int,int>> selected_ladder){
 }
 
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
     cin>>n>>m;
     ladders.resize(m);
     for(int i=0;i<m;i++){

@@ -14,19 +14,14 @@ void choose(int x){
     }
     for(int i=1;i<=K;i++){
         
-        if(x>=2){
-            int temp=a.back();
-            a.pop_back();
-            int temp2=a.back();
-            a.push_back(temp);
-           if(temp2==temp && temp==i){
+        if(x>=2&&a[x-2]==i&&a[x-1]==i){
             continue;
-           }
-        }
+          
+        }else{
         
         a.push_back(i);
         choose(x+1);
-        a.pop_back();
+        a.pop_back();}
         
     }
 }

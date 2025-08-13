@@ -8,7 +8,7 @@ int grid[10][10];
 
 vector<pair<int,int>> x;
 int maxx=INT_MIN;
-bool isused1[10][10];
+
 bool isused2[10];
 bool isused3[10];
 void color(int cnt){
@@ -21,17 +21,17 @@ void color(int cnt){
         maxx=max(maxx,minn);
         return;
     }
-    for(int i=0;i<n;i++){
+    
         for(int j=0;j<n;j++){
-            if(!isused1[i][j]&& !isused2[i]&&!isused3[j]){
-                isused1[i][j]=1;
-                isused2[i]=1;
+            if(!isused2[cnt]&&!isused3[j]){
+                
+                isused2[cnt]=1;
                 isused3[j]=1;
-                x.push_back({i,j});
+                x.push_back({cnt,j});
                 color(cnt+1);
                 x.pop_back();
-                isused1[i][j]=0;
-                isused2[i]=0;
+           
+                isused2[cnt]=0;
                 isused3[j]=0;
 
             }
@@ -39,7 +39,7 @@ void color(int cnt){
 
         }
         
-    }
+   
 }
 int main() {
     cin >> n;
